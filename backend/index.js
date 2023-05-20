@@ -3,10 +3,9 @@ const { graphqlHTTP } = require('express-graphql');
 const { buildSchema } = require('graphql');
 const { MongoClient, ObjectId } = require('mongodb');
 const cors = require('cors');
-require("dotenv").config();
 
-const url = process.env.MONGODB_URI;
-const dbName = 'todo-list';
+const url = mongodb://127.0.0.1:27017;
+const dbName = 'todoListDB';
 const collectionName = 'tasks';
 
 const schema = buildSchema(`
@@ -113,6 +112,6 @@ app.use(
   })
 );
 
-app.listen(process.env.PORT, () => {
+app.listen(4000, () => {
   console.log('GraphQL server running at http://localhost:4000/graphql');
 });
