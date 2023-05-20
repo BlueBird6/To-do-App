@@ -1,0 +1,14 @@
+.delete-btn {
+    /* display: flex; */
+    float: right;
+    width: 25px;
+    cursor: pointer;
+}
+
+li {
+    padding: 0 1.5rem;
+}
+
+li span {
+    margin-left: 0.5rem;
+}

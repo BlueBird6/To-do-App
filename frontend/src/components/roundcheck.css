@@ -1,0 +1,19 @@
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.circle.checked {
+  background-color: #a79b83;
+  color: #fff;
+  border: 1px solid #a79b83;
+}
