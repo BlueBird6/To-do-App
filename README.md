@@ -34,3 +34,16 @@ Follow the steps below to install and set up the application:
 
    ```bash
    npm run install-client
+
+## Usage
+To start the application, follow the steps below:
+
+1. Start the server:
+   ```bash
+   npm run start-server
+The server will start running on http://localhost:4000.
+
+2. Start the client:
+   ```bash
+   npm run start-client
+The client application will open in your default web browser at http://localhost:3000.
