@@ -49,3 +49,23 @@ The server will start running on http://localhost:4000.
    ```bash
    npm run start-client
 The client application will open in your default web browser at http://localhost:3000.
+
+# To dockerize the app follow the below instructions
+
+## Prerequisites
+
+Before running the application, ensure that you have the following installed:
+
+- Docker: [Download and install Docker](https://www.docker.com/get-started).
+
+## Update the backend code to use the MongoDB connection URL:
+
+In the backend/index.js file, go to line 32 and replace 'url' with 'urlMongoDocker'.
+urlMongoDocker has already been declared in line 8
+
+### Run the Docker containers using Docker Compose:
+
+    ```bash
+    docker-compose up
+
+Now the App can be accessed at htttp://localhost:3000 in your web browser
