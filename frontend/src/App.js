@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import Header from "./components/header";
-
-import { useQuery, useMutation } from "react-apollo";
-import { gql } from "apollo-boost";
-
-import "./App.css";
 import ListItem from "./components/listItem";
+
+import { useQuery, useMutation, gql } from '@apollo/client';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faBars } from "@fortawesome/free-solid-svg-icons";
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import "./App.css";
 
 // fetch all tasks in the database
 const GET_TASKS = gql`
@@ -131,6 +129,7 @@ function App() {
                 task={task}
                 handleDeleteTask={handleDeleteTask}
                 handleTaskCompletion={handleTaskCompletion}
+                key={task._id}
               />
             );
           })
@@ -163,3 +162,5 @@ function App() {
 }
 
 export default App;
+export { GET_TASKS, ADD_TASK}
+
