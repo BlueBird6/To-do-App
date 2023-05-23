@@ -67,4 +67,4 @@ urlMongoDocker has already been declared in line 8
    ```bash
    docker-compose up
    ```
-Now the App can be accessed at htttp://localhost:3000 in your web browser
+Now the App can be accessed at http://localhost:3000 in your web browser
