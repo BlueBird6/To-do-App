@@ -25,12 +25,17 @@ Follow the steps below to install and set up the application:
    ```bash
    git clone https://github.com/BlueBird6/To-do-App.git
    
-2. Install the server dependencies:
+2. Go to the project directory:
+
+   ```bash
+   cd To-Do-App
+  
+3. Install the server dependencies:
   
    ```bash
    npm run install-server
   
-3. Install the client dependencies:
+4. Install the client dependencies:
 
    ```bash
    npm run install-client
@@ -46,6 +51,8 @@ The server will start running on http://localhost:4000.
 
 2. Start the client:
 
+   Open another terminal and run the following command:
+   
    ```bash
    npm run start-client
 The client application will open in your default web browser at http://localhost:3000.
