@@ -51,7 +51,7 @@ The server will start running on http://localhost:4000.
 
 2. Start the client:
 
-   Open another terminal and run the following command:
+   Open another terminal in the project directory and run the following command:
    
    ```bash
    npm run start-client
