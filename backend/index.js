@@ -4,7 +4,7 @@ const { buildSchema } = require('graphql');
 const { MongoClient, ObjectId } = require('mongodb');
 const cors = require('cors');
 
-const url = mongodb://127.0.0.1:27017;
+const url = 'mongodb://127.0.0.1:27017';
 const urlMongoDocker = 'mongodb://mongodb:27017';
 const dbName = 'todoListDB';
 const collectionName = 'tasks';
